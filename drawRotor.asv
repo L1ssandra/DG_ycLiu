@@ -1,0 +1,17 @@
+% drawRotor.m
+figure(1);
+contour(xc,yc,Q1,15);
+%mesh(xc,yc,Q1);
+title('rho')
+colormap(cool);
+
+Qrho = Q1;
+Qu = Q2./Q1;
+Qv = Q3./Q1;
+QE = Q4;
+QB1 = Q5;
+QB2 = Q6;
+gamma = 5/3;
+QP = (gamma - 1)*(QE - 0.5*Qrho.*(Qu.^2 + Qv.^2) - 0.5*(QB1.^2 + QB2.^2));
+QC = sqrt(gamma*QP./Qrho);
+QMach = Q
