@@ -1,4 +1,4 @@
-# DG_lyc
+# DG_ycLiu
 A standard P2 2-D Discontinuous-Galerkin-Method program written by Fortran. This program includes:
 
 1. Rectangular grid
